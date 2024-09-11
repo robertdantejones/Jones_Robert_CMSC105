@@ -26,6 +26,20 @@ while user >= 1 and user <= 11:
         user = int(input('Enter number from 1-11: \n'))
         continue
 
+# when user doesnt enter valid input
+while user >= 12:
+    # check if user wants to end program
+    userQuit = input('Would you like to quit the program (yes/no): \n')
+    if userQuit == 'yes':
+        break
+    elif userQuit == 'no':
+        # run multiples based on corrected user input
+        userCorrect = int(input('Please enter valid value. Enter number from 1-11: \n'))
+        if (userCorrect >= 1 and userCorrect <= 11):
+            print(f'Printing out multiples of {userCorrect} \n')
+            for count in range(start, end + 1):
+                new = count * userCorrect
+                print(f"{userCorrect} x {count} = {new}")
 
 
 
