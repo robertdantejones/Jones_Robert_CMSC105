@@ -13,7 +13,7 @@ user = int(input('Enter number from 1-11: \n'))
 # validate user input
 while user >= 1 and user <= 11:
     # print results
-    print(f'Printing out multiples of {user} \n')
+    print(f'Multiplication Table for {user}: \n')
     for count in range(start, end +1):
         new = count * user
         print(f"{user} x {count} = {new}")
@@ -35,8 +35,8 @@ while user >= 12:
     elif userQuit == 'no':
         # run multiples based on corrected user input
         userCorrect = int(input('Please enter valid value. Enter number from 1-11: \n'))
-        if (userCorrect >= 1 and userCorrect <= 11):
-            print(f'Printing out multiples of {userCorrect} \n')
+        if userCorrect >= 1 and userCorrect <= 11:
+            print(f'Multiplication Table for {userCorrect}: \n')
             for count in range(start, end + 1):
                 new = count * userCorrect
                 print(f"{userCorrect} x {count} = {new}")
