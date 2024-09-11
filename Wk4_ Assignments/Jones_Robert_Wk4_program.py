@@ -5,6 +5,11 @@ Purpose: This program is intended to provide calculations for multiples of 7 bas
 Version: 1.0
 '''
 
+# Declare variables
+start = 1
+end = 11
+user = int(input('Enter number from 1-11: \n'))
+
 
 
 
