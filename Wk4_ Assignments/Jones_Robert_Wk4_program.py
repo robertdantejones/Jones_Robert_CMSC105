@@ -34,7 +34,7 @@ while user >= 12:
         break
     elif userQuit == 'no':
         # run multiples based on corrected user input
-        userCorrect = int(input('Please enter valid value. Enter number from 1-11: \n'))
+        userCorrect = int(input('Enter number from 1-11: \n'))
         if userCorrect >= 1 and userCorrect <= 11:
             print(f'Multiplication Table for {userCorrect}: \n')
             for count in range(start, end + 1):
