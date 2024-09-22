@@ -27,7 +27,7 @@ while user >= 1 and user <= 11:
         continue
 
 # when user doesnt enter valid input
-while user >= 12:
+while user >= 12 or user < 0:
     # check if user wants to end program
     userQuit = input('Would you like to quit the program (yes/no): \n')
     if userQuit == 'yes':
