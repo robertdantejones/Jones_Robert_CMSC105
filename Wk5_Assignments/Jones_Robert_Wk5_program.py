@@ -10,7 +10,6 @@ def calculate_finaltotal(size_price, quantity_price):
 
 # input prompts for user to interact with
 def main():
-    toppings =[]
     print("Welcome to Roberto's Pizzeria! \n")
     print("Choose one size pizza(1 for Small, 2 for Medium, 3 for Large)")
     size_choice=int(input("Enter size choice: \n"))
@@ -31,7 +30,9 @@ def main():
 
     topping = int(input("Would you like toppings? (1 for yes/2 for no):\n"))
     # conditional for selecting topping
+    toppings = []
     if topping == 1:
+
         topping1=int(input("Pepperoni (1 or 0): \n"))
         # conditional for selecting individual topping choice
         if topping1 == 1:
@@ -39,21 +40,23 @@ def main():
             pizza +=1
             # adding topping choice to list to display on reciept
             toppings.append("Pepperoni")
-        else:
+        elif topping1 == 0:
             pizza+=0
 
         topping2=int(input("Sausage (1 or 0): \n"))
         if topping2 == 1:
             pizza += 1
             toppings.append("Sausage")
-        else:
+        elif topping2 == 0:
             pizza += 0
+
         topping3=int(input("Olive (1 or 0): \n"))
         if topping3 == 1:
             pizza += 1
             toppings.append("Olives")
-        else:
+        elif topping3 == 0:
             pizza += 0
+
     elif 1 < topping <= 2:
         pizza += 0
         toppings = 'no toppings selected'
@@ -69,9 +72,6 @@ def main():
     print(f'Number of quantity: {quantity}')
     print(f'Your final total is ${checkout}')
 
-
-    # # call total function
-    # checkout = calculate_total(size,topping,quantity)
 
 # call to main function
 if __name__ == "__main__":
