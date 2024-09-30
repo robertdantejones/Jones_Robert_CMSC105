@@ -36,6 +36,9 @@ def main():
             # display my recommendations
             my_recommendations=['Lucy','John Wick','Deadpool and Wolverine','Avengers: Endgame','Rebel Ridge','Hustler','Harley Quinn']
             print(my_recommendations)
+        elif choice == 4:
+            # display user's movie list
+            print(movie)
 
 
 if __name__ == "__main__":
