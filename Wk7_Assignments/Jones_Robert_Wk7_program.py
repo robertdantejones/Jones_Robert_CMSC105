@@ -18,6 +18,15 @@ def main():
         print('4. Display list.\n')
         print('5. Exit the program\n')
 
+        # gather user input
+        choice=int(input("Select from the following options:\n"))
+        # decisions based of user input
+        if choice == 1:
+            # adding movie to list
+            add_movie=input("Type the name of movie your adding to your list:\n")
+            movie.append(add_movie)
+            print(f'{add_movie} has been added to your list\n')
+
 
 
 if __name__ == "__main__":
