@@ -32,6 +32,10 @@ def main():
             remove_movie=input('What movie would you like to remove?:\n')
             movie.remove(remove_movie)
             print(f'{remove_movie} has been removed from your list.')
+        elif choice == 3:
+            # display my recommendations
+            my_recommendations=['Lucy','John Wick','Deadpool and Wolverine','Avengers: Endgame','Rebel Ridge','Hustler','Harley Quinn']
+            print(my_recommendations)
 
 
 if __name__ == "__main__":
