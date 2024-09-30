@@ -9,14 +9,15 @@ Date: 9/30/24
 def main():
     # declare list
     movie = []
+    print('Welcome to your Movie Recommendations!\n')
     while True:
         # Display menu options
-        print('Welcome to your Movie Recommendations!\n')
+        print('Menu')
         print('1. Add movie to your list.')
         print('2. Remove movie from your list.')
         print("3. View Programmer's recommendations.")
         print('4. Display your list.')
-        print('5. Exit the program.')
+        print('5. Exit the program.\n')
 
         # gather user input
         choice=int(input("Select from the following options:\n"))
