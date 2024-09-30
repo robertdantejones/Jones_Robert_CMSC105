@@ -26,7 +26,12 @@ def main():
             add_movie=input("Type the name of movie your adding to your list:\n")
             movie.append(add_movie)
             print(f'{add_movie} has been added to your list\n')
-
+        elif choice == 2:
+            # removing movie from list
+            print(movie)
+            remove_movie=input('What movie would you like to remove?:\n')
+            movie.remove(remove_movie)
+            print(f'{remove_movie} has been removed from your list.')
 
 
 if __name__ == "__main__":
