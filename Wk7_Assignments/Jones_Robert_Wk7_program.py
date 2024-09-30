@@ -11,19 +11,19 @@ def main():
     movie = []
     while True:
         # Display menu options
-        print('Welcome to your Movie Recommendations!')
-        print('1. Add movie to list\n')
-        print('2. Remove movie from list\n')
-        print("3. View Programmer's recommendations \n")
-        print('4. Display list.\n')
-        print('5. Exit the program\n')
+        print('Welcome to your Movie Recommendations!\n')
+        print('1. Add movie to your list.')
+        print('2. Remove movie from your list.')
+        print("3. View Programmer's recommendations.")
+        print('4. Display your list.')
+        print('5. Exit the program.')
 
         # gather user input
         choice=int(input("Select from the following options:\n"))
         # decisions based of user input
         if choice == 1:
             # adding movie to list
-            add_movie=input("Type the name of movie your adding to your list:\n")
+            add_movie=input("Type the name of movie you want to add:\n")
             movie.append(add_movie)
             print(f'{add_movie} has been added to your list\n')
         elif choice == 2:
@@ -37,8 +37,14 @@ def main():
             my_recommendations=['Lucy','John Wick','Deadpool and Wolverine','Avengers: Endgame','Rebel Ridge','Hustler','Harley Quinn']
             print(my_recommendations)
         elif choice == 4:
-            # display user's movie list
-            print(movie)
+            # checks if list is empty
+            if len(movie) == 0:
+                print("Your list is empty. Please add movies.")
+            else:
+                # display user's movie list
+                 print(movie)
+                 print('\n')
+
         elif choice == 5:
             # quit program
             print('You have exited the program.')
