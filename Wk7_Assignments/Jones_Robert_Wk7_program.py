@@ -39,6 +39,13 @@ def main():
         elif choice == 4:
             # display user's movie list
             print(movie)
+        elif choice == 5:
+            # quit program
+            print('You have exited the program.')
+            break
+    #     # else:
+    #     #     # user validation
+    #     #     print('Invalid Choice. Please choose from the following menu.\n')
 
 
 if __name__ == "__main__":
