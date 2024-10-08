@@ -7,7 +7,7 @@ Date: 10/7/24
 '''
 
 # declare lists
-avail_books=[]
+avail_books=['The Name of the Wind','Dune','The Girl with the Dragon Tattoo','The Nightingale','The Hating Game','The Shining','Becoming','The Hunger Games','Maus','Atomic Habits']
 borrow_books=[]
 
 # main function for user interactivity
@@ -44,6 +44,7 @@ def main():
         elif choice == 3:
             # displaying current state of lists
             print(avail_books)
+            # try adding for loop to display list
             # checks if borrowed book list is empty
             if len(borrow_books) == 0:
                 print("You haven't borrowed any books yet!")
@@ -58,5 +59,6 @@ def main():
             print("Invalid choice. Please select from the options displayed on the menu!")
 
 
-
+if __name__ == "__main__":
+    main()
 
