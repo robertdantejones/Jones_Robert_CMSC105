@@ -20,8 +20,8 @@ def main():
         print('Menu')
         print('1. Borrow a book.')
         print('2. Return a book.')
-        print('4. Display available books and books you have borrowed.')
-        print('5. Exit the program.\n')
+        print('3. Display available books and books you have borrowed.')
+        print('4. Exit the program.\n')
 
         # user input
         choice=int(input('Choose your option:\n'))
@@ -35,14 +35,28 @@ def main():
             borrow_books.append(book_borrow)
             print(f'You are borrowing {book_borrow}.')
         elif choice == 2:
+            # removing book from borrow list and adding to avail list
             print(borrow_books)
             book_return=input('Type the name of the book that you would like to return:\n')
             borrow_books.remove(book_return)
             avail_books.append(book_return)
             print(f'You have returned {book_return}.')
         elif choice == 3:
-
+            # displaying current state of lists
+            print(avail_books)
+            # checks if borrowed book list is empty
+            if len(borrow_books) == 0:
+                print("You haven't borrowed any books yet!")
+            else:
+                print(borrow_books)
         elif choice == 4:
+            # quit program
+            print('You have exited the program. Goodbye!')
+            break
         else:
+            # user validation
+            print("Invalid choice. Please select from the options displayed on the menu!")
+
+
 
 
