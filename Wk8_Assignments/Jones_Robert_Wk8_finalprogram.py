@@ -6,9 +6,6 @@ Version: 1.0
 Date: 10/7/24
 '''
 
-# declare lists
-avail_books = ['The Name of the Wind', 'Dune', 'The Girl with the Dragon Tattoo', 'The Nightingale', 'The Hating Game', 'The Shining', 'Becoming', 'The Hunger Games', 'Maus', 'Atomic Habits']
-borrow_books = []
 
 # function to remove book from avail list and adding to borrow list
 def catalog(books):
@@ -25,6 +22,9 @@ def borrower(books):
 
 # main function for user interactivity
 def main():
+    # declare lists
+    avail_books = ['The Name of the Wind', 'Dune', 'The Girl with the Dragon Tattoo', 'The Nightingale','The Hating Game', 'The Shining', 'Becoming', 'The Hunger Games', 'Maus', 'Atomic Habits']
+    borrow_books = []
     print('Welcome to your local library!\n')
 
     while True:
@@ -33,7 +33,7 @@ def main():
         print('Menu')
         print('1. Borrow a book.')
         print('2. Return a book.')
-        print('3. Display available books and books you have borrowed.')
+        print('3. Display available books and books you are borrowing.')
         print('4. Exit the program.\n')
 
         # user input
@@ -77,7 +77,7 @@ def main():
                     print(book)
         elif choice == 4:
             # quit program
-            print('You have one week to return your book. Goodbye!')
+            print('You have one week to return your book(s). Goodbye!')
             break
         else:
             # user validation
